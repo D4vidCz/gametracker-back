@@ -3,11 +3,18 @@ import dotenv from "dotenv";
 import { connectDB } from "./config/db.js";
 import { Game } from "./models/game.js";
 import { Review } from "./models/review.js";
+import gameRoutes from "./routes/gameRoutes.js";
+import reviewRoutes from "./routes/reviewRoutes.js";
 
 dotenv.config();
 const app = express();
 
 connectDB();
+
+
+app.use(express.json()); // Para leer JSON
+app.use("/api/games", gameRoutes);
+app.use("/api/reviews", reviewRoutes);
 
 app.get("/", (req, res) => {
   res.send("GameTracker API lista 🚀");
