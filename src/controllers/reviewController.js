@@ -21,6 +21,27 @@ export const createReview = async (req, res) => {
   }
 };
 
+// Actualizar una reseña
+export const updateReview = async (req, res) => {
+  try {
+    const updatedReview = await Review.findByIdAndUpdate(
+      req.params.id,
+      req.body,
+      { new: true }
+    );
+
+    if (!updatedReview) {
+      return res.status(404).json({ message: "Reseña no encontrada" });
+    }
+
+    res.json(updatedReview);
+  } catch (error) {
+    console.error(error);
+    res.status(400).json({ message: "Error al actualizar la reseña" });
+  }
+};
+
+
 // Eliminar una reseña
 export const deleteReview = async (req, res) => {
   try {

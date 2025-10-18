@@ -24,3 +24,26 @@ y visualizar los juegos y reseñas disponibles.
 | **Dotenv** | Manejo de variables de entorno |
 | **Nodemon** | Recarga automática del servidor en desarrollo |
 | **Git y GitHub** | Control de versiones y colaboración en equipo |
+
+## 🧩 Sprint 1 - Backend funcional
+
+**Estado:** ✅ Completado
+
+### ✅ Avances
+- Conexión con MongoDB Atlas estable.
+- Modelos `Game` y `Review` creados y relacionados.
+- Controladores y rutas CRUD operativas.
+- Endpoints probados con Postman.
+- Datos visibles en MongoDB Atlas.
+
+### 💻 Endpoints principales
+| Método | Ruta | Descripción |
+|--------|------|-------------|
+| GET | `/api/games` | Listar juegos |
+| POST | `/api/games` | Crear juego |
+| PUT | `/api/games/:id` | Actualizar juego |
+| DELETE | `/api/games/:id` | Eliminar juego |
+| GET | `/api/reviews` | Listar reseñas |
+| POST | `/api/reviews` | Crear reseña |
+| DELETE | `/api/reviews/:id` | Eliminar reseña |
+
