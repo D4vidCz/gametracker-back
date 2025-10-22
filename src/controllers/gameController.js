@@ -10,6 +10,19 @@ export const getGames = async (req, res) => {
   }
 };
 
+// Obtener un juego por ID 👇 (NUEVA FUNCIÓN)
+export const getGameById = async (req, res) => {
+  try {
+    const game = await Game.findById(req.params.id);
+    if (!game) {
+      return res.status(404).json({ message: "Juego no encontrado" });
+    }
+    res.json(game);
+  } catch (error) {
+    res.status(400).json({ message: "Error al obtener el juego", error });
+  }
+};
+
 // Crear un nuevo juego
 export const createGame = async (req, res) => {
   try {
@@ -25,6 +38,9 @@ export const createGame = async (req, res) => {
 export const updateGame = async (req, res) => {
   try {
     const updatedGame = await Game.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    if (!updatedGame) {
+      return res.status(404).json({ message: "Juego no encontrado" });
+    }
     res.json(updatedGame);
   } catch (error) {
     res.status(400).json({ message: "Error al actualizar el juego" });

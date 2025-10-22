@@ -3,51 +3,46 @@ import { Review } from "../models/review.js";
 // Obtener todas las reseñas
 export const getReviews = async (req, res) => {
   try {
-    const reviews = await Review.find().populate("game");
-    res.json(reviews);
+    const reseñas = await Review.find().populate("juegoId", "titulo genero plataforma");
+    res.json(reseñas);
   } catch (error) {
-    res.status(500).json({ message: "Error al obtener las reseñas" });
+    res.status(500).json({ mensaje: "Error al obtener las reseñas" });
   }
 };
 
 // Crear una nueva reseña
 export const createReview = async (req, res) => {
   try {
-    const newReview = new Review(req.body);
-    await newReview.save();
-    res.status(201).json(newReview);
+    const nuevaReseña = new Review(req.body);
+    await nuevaReseña.save();
+    res.status(201).json(nuevaReseña);
   } catch (error) {
-    res.status(400).json({ message: "Error al crear la reseña" });
+    res.status(400).json({ mensaje: "Error al crear la reseña" });
   }
 };
 
 // Actualizar una reseña
 export const updateReview = async (req, res) => {
   try {
-    const updatedReview = await Review.findByIdAndUpdate(
-      req.params.id,
-      req.body,
-      { new: true }
-    );
-
-    if (!updatedReview) {
-      return res.status(404).json({ message: "Reseña no encontrada" });
+    const reseñaActualizada = await Review.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    if (!reseñaActualizada) {
+      return res.status(404).json({ mensaje: "Reseña no encontrada" });
     }
-
-    res.json(updatedReview);
+    res.json(reseñaActualizada);
   } catch (error) {
-    console.error(error);
-    res.status(400).json({ message: "Error al actualizar la reseña" });
+    res.status(400).json({ mensaje: "Error al actualizar la reseña" });
   }
 };
-
 
 // Eliminar una reseña
 export const deleteReview = async (req, res) => {
   try {
-    await Review.findByIdAndDelete(req.params.id);
-    res.json({ message: "Reseña eliminada correctamente" });
+    const reseñaEliminada = await Review.findByIdAndDelete(req.params.id);
+    if (!reseñaEliminada) {
+      return res.status(404).json({ mensaje: "Reseña no encontrada" });
+    }
+    res.json({ mensaje: "Reseña eliminada correctamente" });
   } catch (error) {
-    res.status(400).json({ message: "Error al eliminar la reseña" });
+    res.status(400).json({ mensaje: "Error al eliminar la reseña" });
   }
 };

@@ -5,12 +5,18 @@ import { Game } from "./models/game.js";
 import { Review } from "./models/review.js";
 import gameRoutes from "./routes/gameRoutes.js";
 import reviewRoutes from "./routes/reviewRoutes.js";
+import cors from "cors";
+
+
+
 
 dotenv.config();
 const app = express();
 
 connectDB();
 
+
+app.use(cors());
 
 app.use(express.json()); // Para leer JSON
 app.use("/api/games", gameRoutes);

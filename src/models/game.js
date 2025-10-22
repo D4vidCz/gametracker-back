@@ -1,30 +1,16 @@
 import mongoose from "mongoose";
 
 const gameSchema = new mongoose.Schema({
-  title: {
-    type: String,
-    required: [true, "El título del juego es obligatorio"],
-  },
-  genre: {
-    type: String,
-    required: true,
-  },
-  platform: {
-    type: String,
-    required: true,
-  },
-  releaseYear: {
-    type: Number,
-    required: true,
-  },
-  rating: {
-    type: Number,
-    min: 0,
-    max: 10,
-    default: 0,
-  },
+  titulo: { type: String, required: true },
+  genero: { type: String, required: true },
+  plataforma: { type: String, required: true },
+  añoLanzamiento: { type: Number, required: true },
+  desarrollador: { type: String },
+  imagenPortada: { type: String },
+  descripcion: { type: String },
+  completado: { type: Boolean, default: false }
 }, {
-  timestamps: true
+  timestamps: { createdAt: 'fechaCreacion', updatedAt: 'fechaActualizacion' }
 });
 
 export const Game = mongoose.model("Game", gameSchema);
