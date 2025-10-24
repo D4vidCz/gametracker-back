@@ -10,6 +10,20 @@ export const getReviews = async (req, res) => {
   }
 };
 
+// Obtener reseñas de un juego específico
+export const getReviewsByGame = async (req, res) => {
+  try {
+    const { gameId } = req.params;
+    // Busca reseñas cuyo campo "juegoId" (en tu modelo) coincide con gameId
+    const reseñas = await Review.find({ juegoId: gameId }).populate("juegoId", "titulo genero plataforma");
+    res.json(reseñas);
+  } catch (error) {
+    console.error('[reviewController] getReviewsByGame error:', error);
+    res.status(500).json({ mensaje: "Error al obtener las reseñas del juego" });
+  }
+};
+
+
 // Crear una nueva reseña
 export const createReview = async (req, res) => {
   try {
