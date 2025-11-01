@@ -5,6 +5,7 @@ import { Game } from "./models/game.js";
 import { Review } from "./models/review.js";
 import gameRoutes from "./routes/gameRoutes.js";
 import reviewRoutes from "./routes/reviewRoutes.js";
+import statsRoutes from "./routes/statsRoutes.js";
 import cors from "cors";
 
 
@@ -19,6 +20,7 @@ connectDB();
 app.use(cors());
 
 app.use(express.json()); // Para leer JSON
+app.use("/api/stats", statsRoutes);
 app.use("/api/games", gameRoutes);
 app.use("/api/reviews", reviewRoutes);
 

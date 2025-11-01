@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const gameSchema = new mongoose.Schema({
-  titulo: { type: String, required: true },
+  titulo: { type: String, required: true, unique: true },
   genero: { type: String, required: true },
   plataforma: { type: String, required: true },
   añoLanzamiento: { type: Number, required: true },

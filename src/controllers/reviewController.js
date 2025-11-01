@@ -1,4 +1,5 @@
 import { Review } from "../models/review.js";
+import mongoose from "mongoose";
 
 // Obtener todas las reseñas
 export const getReviews = async (req, res) => {
@@ -9,6 +10,49 @@ export const getReviews = async (req, res) => {
     res.status(500).json({ mensaje: "Error al obtener las reseñas" });
   }
 };
+
+// Obtener reseñas de un juego específico
+export const getReviewsByGame = async (req, res) => {
+  try {
+    const { gameId } = req.params;
+    const reviews = await Review.find({ juegoId: gameId });
+    res.json(reviews);
+  } catch (error) {
+    res.status(500).json({ message: "Error al obtener reseñas del juego" });
+  }
+};
+
+export const getReviewStatsByGame = async (req, res) => {
+  try {
+    const { gameId } = req.params;
+
+    const totalReviews = await Review.countDocuments({ juegoId: gameId });
+
+    const promedioPuntuacion = await Review.aggregate([
+      { $match: { juegoId: new mongoose.Types.ObjectId(gameId) } },
+      { $group: { _id: null, promedio: { $avg: "$puntuacion" } } }
+    ]);
+
+    const totalHoras = await Review.aggregate([
+      { $match: { juegoId: new mongoose.Types.ObjectId(gameId) } },
+      { $group: { _id: null, total: { $sum: "$horasJugadas" } } }
+    ]);
+
+    const recomendados = await Review.countDocuments({ juegoId: gameId, recomendaria: true });
+
+    res.json({
+      totalReviews,
+      promedioPuntuacion: promedioPuntuacion[0]?.promedio || 0,
+      totalHorasJugadas: totalHoras[0]?.total || 0,
+      recomendados
+    });
+  } catch (error) {
+    console.error("❌ Error al obtener estadísticas del juego:", error);
+    res.status(500).json({ message: "Error al obtener estadísticas del juego" });
+  }
+};
+
+
 
 // Crear una nueva reseña
 export const createReview = async (req, res) => {
