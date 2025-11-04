@@ -1,4 +1,5 @@
 import { Game } from "../models/game.js";
+import { Review } from "../models/review.js"; // 👈 Importa el modelo de reseñas
 
 // Obtener todos los juegos
 export const getGames = async (req, res) => {
@@ -10,7 +11,7 @@ export const getGames = async (req, res) => {
   }
 };
 
-// Obtener un juego por ID 👇 (NUEVA FUNCIÓN)
+// Obtener un juego por ID
 export const getGameById = async (req, res) => {
   try {
     const game = await Game.findById(req.params.id);
@@ -47,12 +48,45 @@ export const updateGame = async (req, res) => {
   }
 };
 
-// Eliminar un juego
+// ✅ Eliminar un juego y sus reseñas asociadas
 export const deleteGame = async (req, res) => {
   try {
-    await Game.findByIdAndDelete(req.params.id);
-    res.json({ message: "Juego eliminado correctamente" });
+    const { id } = req.params;
+
+    // Verificar que el juego exista
+    const game = await Game.findById(id);
+    if (!game) {
+      return res.status(404).json({ message: "Juego no encontrado" });
+    }
+
+    // 🧹 Eliminar reseñas relacionadas con este juego
+    await Review.deleteMany({ juegoId: id });
+
+    // 🕹️ Eliminar el juego
+    await Game.findByIdAndDelete(id);
+
+    res.json({ message: "Juego y reseñas eliminados correctamente" });
   } catch (error) {
+    console.error("❌ Error al eliminar el juego:", error);
     res.status(400).json({ message: "Error al eliminar el juego" });
   }
+
+  
 };
+
+// Actualizar solo el campo "completado"
+export const toggleCompletado = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { completado } = req.body;
+    const updatedGame = await Game.findByIdAndUpdate(
+      id,
+      { completado },
+      { new: true }
+    );
+    res.json(updatedGame);
+  } catch (error) {
+    res.status(400).json({ message: "Error al actualizar estado de completado" });
+  }
+};
+

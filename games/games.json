@@ -1,0 +1,312 @@
+[
+  {
+    "titulo": "The Legend of Zelda: Breath of the Wild",
+    "genero": "Aventura",
+    "plataforma": "Nintendo Switch",
+    "añoLanzamiento": 2017,
+    "desarrollador": "Nintendo",
+    "imagenPortada": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/The_Legend_of_Zelda_Breath_of_the_Wild.jpg/250px-The_Legend_of_Zelda_Breath_of_the_Wild.jpg",
+    "descripcion": "Explora un vasto mundo abierto lleno de misterios, templos y enemigos legendarios en Hyrule.",
+    "completado": true
+  },
+  {
+    "titulo": "Halo Infinite",
+    "genero": "Shooter",
+    "plataforma": "Xbox Series X",
+    "añoLanzamiento": 2021,
+    "desarrollador": "343 Industries",
+    "imagenPortada": "https://images.cdn3.buscalibre.com/fit-in/360x360/5c/ff/5cff0805ea0e661ff9da3efc6a84ac5f.jpg",
+    "descripcion": "El Jefe Maestro regresa en una nueva aventura para salvar a la humanidad frente al Pacto.",
+    "completado": false
+  },
+  {
+    "titulo": "God of War Ragnarök",
+    "genero": "Acción",
+    "plataforma": "PlayStation 5",
+    "añoLanzamiento": 2022,
+    "desarrollador": "Santa Monica Studio",
+    "imagenPortada": "https://static.wikia.nocookie.net/godofwar/images/c/ca/Portada_God_of_War_Ragnarok.png/revision/latest?cb=20211008000423&path-prefix=es",
+    "descripcion": "Kratos y Atreus enfrentan el destino en los mitos nórdicos mientras el Ragnarök se aproxima.",
+    "completado": true
+  },
+  {
+    "titulo": "Red Dead Redemption 2",
+    "genero": "Aventura",
+    "plataforma": "PC",
+    "añoLanzamiento": 2018,
+    "desarrollador": "Rockstar Games",
+    "imagenPortada": "https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png?w=440",
+    "descripcion": "Vive la vida de Arthur Morgan, un forajido en el Salvaje Oeste mientras el mundo cambia a su alrededor.",
+    "completado": true
+  },
+  {
+    "titulo": "Cyberpunk 2077",
+    "genero": "RPG",
+    "plataforma": "PC",
+    "añoLanzamiento": 2020,
+    "desarrollador": "CD Projekt Red",
+    "imagenPortada": "https://upload.wikimedia.org/wikipedia/en/9/9f/Cyberpunk_2077_box_art.jpg",
+    "descripcion": "Sumérgete en Night City, una metrópolis obsesionada con el poder, el glamour y las modificaciones corporales.",
+    "completado": false
+  },
+  {
+    "titulo": "Elden Ring",
+    "genero": "RPG",
+    "plataforma": "PlayStation 5",
+    "añoLanzamiento": 2022,
+    "desarrollador": "FromSoftware",
+    "imagenPortada": "https://m.media-amazon.com/images/M/MV5BZGQxMjYyOTUtNjYyMC00NzdmLWI4YmYtMDhiODU3Njc5ZDJkXkEyXkFqcGc@._V1_QL75_UX190_CR0,2,190,281_.jpg",
+    "descripcion": "Explora las Tierras Intermedias y enfréntate a poderosos enemigos en un mundo abierto diseñado por Hidetaka Miyazaki y George R. R. Martin.",
+    "completado": true
+  },
+  {
+    "titulo": "Gears 5",
+    "genero": "Shooter",
+    "plataforma": "Xbox One",
+    "añoLanzamiento": 2019,
+    "desarrollador": "The Coalition",
+    "imagenPortada": "https://store-images.s-microsoft.com/image/apps.10933.65494054591008504.4eae27ba-1cfe-4af2-950a-4af81f8cd22a.b5b2909d-8884-48d0-b25a-68d6518c9b73",
+    "descripcion": "Kait Díaz busca respuestas sobre su pasado en una historia que define el futuro de la humanidad.",
+    "completado": true
+  },
+  {
+    "titulo": "Forza Horizon 5",
+    "genero": "Carreras",
+    "plataforma": "Xbox Series X",
+    "añoLanzamiento": 2021,
+    "desarrollador": "Playground Games",
+    "imagenPortada": "https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Forza_Horizon_5_cover_art.jpg/250px-Forza_Horizon_5_cover_art.jpg",
+    "descripcion": "Conduce cientos de autos por los paisajes vibrantes de México en este festival automovilístico sin límites.",
+    "completado": false
+  },
+  {
+    "titulo": "Minecraft",
+    "genero": "Sandbox",
+    "plataforma": "PC",
+    "añoLanzamiento": 2011,
+    "desarrollador": "Mojang Studios",
+    "imagenPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202407/0401/670c294ded3baf4fa11068db2ec6758c63f7daeb266a35a1.png?w=440",
+    "descripcion": "Construye, explora y sobrevive en un mundo hecho completamente de bloques.",
+    "completado": false
+  },
+  {
+    "titulo": "Grand Theft Auto V",
+    "genero": "Acción",
+    "plataforma": "PC",
+    "añoLanzamiento": 2015,
+    "desarrollador": "Rockstar North",
+    "imagenPortada": "https://www.godisageek.com/wp-content/uploads/GTAV-Review.jpg",
+    "descripcion": "Tres criminales en Los Santos planean golpes cada vez más arriesgados en busca de fortuna.",
+    "completado": true
+  },
+  {
+    "titulo": "FIFA 23",
+    "genero": "Deportes",
+    "plataforma": "PlayStation 5",
+    "añoLanzamiento": 2022,
+    "desarrollador": "EA Sports",
+    "imagenPortada": "https://media.vandal.net/m/122945/fifa-23-202210612192557_1.jpg",
+    "descripcion": "La experiencia definitiva del fútbol con tecnología HyperMotion2 y competiciones femeninas oficiales.",
+    "completado": false
+  },
+  {
+    "titulo": "Call of Duty: Modern Warfare II",
+    "genero": "Shooter",
+    "plataforma": "PC",
+    "añoLanzamiento": 2022,
+    "desarrollador": "Infinity Ward",
+    "imagenPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202205/2800/iQGgKYUg9YwjPVNM0kE8jeRN.jpg?w=440",
+    "descripcion": "Vuelve la Task Force 141 en una campaña intensa llena de acción táctica y realismo visual.",
+    "completado": false
+  },
+  {
+    "titulo": "Resident Evil 4 Remake",
+    "genero": "Terror",
+    "plataforma": "PlayStation 5",
+    "añoLanzamiento": 2023,
+    "desarrollador": "Capcom",
+    "imagenPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202207/2509/85p2Dwh5iDhUzRKe40QeNYh3.png",
+    "descripcion": "Leon S. Kennedy regresa en una reinvención moderna del clásico de survival horror.",
+    "completado": true
+  },
+  {
+    "titulo": "Hollow Knight",
+    "genero": "Metroidvania",
+    "plataforma": "PC",
+    "añoLanzamiento": 2017,
+    "desarrollador": "Team Cherry",
+    "imagenPortada": "https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Hollow_Knight_first_cover_art.webp/274px-Hollow_Knight_first_cover_art.webp.png",
+    "descripcion": "Explora las profundidades de Hallownest en un viaje desafiante y hermoso lleno de secretos.",
+    "completado": true
+  },
+  {
+    "titulo": "Spider-Man: Miles Morales",
+    "genero": "Acción",
+    "plataforma": "PlayStation 5",
+    "añoLanzamiento": 2020,
+    "desarrollador": "Insomniac Games",
+    "imagenPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202008/1020/T45iRN1bhiWcJUzST6UFGBvO.png",
+    "descripcion": "Miles Morales aprende lo que significa ser un héroe mientras defiende su ciudad como el nuevo Spider-Man.",
+    "completado": true
+  },
+  {
+    "titulo": "Assassin's Creed Valhalla",
+    "genero": "Aventura",
+    "plataforma": "PC",
+    "añoLanzamiento": 2020,
+    "desarrollador": "Ubisoft",
+    "imagenPortada": "https://upload.wikimedia.org/wikipedia/en/f/ff/Assassin%27s_Creed_Valhalla_cover.jpg",
+    "descripcion": "Conquista Inglaterra como Eivor, un guerrero vikingo en busca de gloria.",
+    "completado": false
+  },
+  {
+    "titulo": "Sekiro: Shadows Die Twice",
+    "genero": "Acción",
+    "plataforma": "PC",
+    "añoLanzamiento": 2019,
+    "desarrollador": "FromSoftware",
+    "imagenPortada": "https://cdn.mobygames.com/covers/6698208-sekiro-shadows-die-twice-windows-front-cover.jpg",
+    "descripcion": "Embárcate en un viaje brutal y técnico en el Japón Sengoku como el Lobo, un ninja en busca de venganza.",
+    "completado": true
+  },
+  {
+    "titulo": "Overwatch 2",
+    "genero": "Shooter",
+    "plataforma": "PC",
+    "añoLanzamiento": 2022,
+    "desarrollador": "Blizzard Entertainment",
+    "imagenPortada": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/Sekiro_art.jpg/250px-Sekiro_art.jpg",
+    "descripcion": "Forma equipo en combates 5v5 con héroes únicos y habilidades espectaculares.",
+    "completado": false
+  },
+  {
+    "titulo": "The Witcher 3: Wild Hunt",
+    "genero": "RPG",
+    "plataforma": "PC",
+    "añoLanzamiento": 2015,
+    "desarrollador": "CD Projekt Red",
+    "imagenPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202211/0711/kh4MUIuMmHlktOHar3lVl6rY.png",
+    "descripcion": "Juega como Geralt de Rivia en una historia épica llena de monstruos, magia y decisiones morales.",
+    "completado": true
+  },
+  {
+    "titulo": "Starfield",
+    "genero": "RPG",
+    "plataforma": "Xbox Series X",
+    "añoLanzamiento": 2023,
+    "desarrollador": "Bethesda Game Studios",
+    "imagenPortada": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1716740/capsule_616x353.jpg?t=1749757928",
+    "descripcion": "Explora el espacio y descubre cientos de planetas en la nueva epopeya de Bethesda.",
+    "completado": false
+  },
+  {
+    "titulo": "Baldur's Gate 3",
+    "genero": "RPG",
+    "plataforma": "PC",
+    "añoLanzamiento": 2023,
+    "desarrollador": "Larian Studios",
+    "imagenPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202302/2321/ba706e54d68d10a0eb6ab7c36cdad9178c58b7fb7bb03d28.png?w=440",
+    "descripcion": "Forma tu grupo y forja tu destino en el universo de Dungeons & Dragons.",
+    "completado": true
+  },
+  {
+    "titulo": "Horizon Forbidden West",
+    "genero": "Aventura",
+    "plataforma": "PlayStation 5",
+    "añoLanzamiento": 2022,
+    "desarrollador": "Guerrilla Games",
+    "imagenPortada": "https://www.muycomputer.com/wp-content/uploads/2023/09/Horizon-Forbidden-West.jpeg",
+    "descripcion": "Acompaña a Aloy en una nueva travesía hacia el oeste prohibido lleno de criaturas mecánicas.",
+    "completado": false
+  },
+  {
+    "titulo": "Ghost of Tsushima",
+    "genero": "Acción",
+    "plataforma": "PlayStation 4",
+    "añoLanzamiento": 2020,
+    "desarrollador": "Sucker Punch",
+    "imagenPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202010/0222/niMUubpU9y1PxNvYmDfb8QFD.png",
+    "descripcion": "Conviértete en el Fantasma para liberar Tsushima de la invasión mongola.",
+    "completado": true
+  },
+  {
+    "titulo": "Fortnite",
+    "genero": "Battle Royale",
+    "plataforma": "PC",
+    "añoLanzamiento": 2017,
+    "desarrollador": "Epic Games",
+    "imagenPortada": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000010192/f26fc9e1b11ce01369966ed9225e320a293c4eaad1329774f125e05629ffd437",
+    "descripcion": "Construye, pelea y sobrevive hasta ser el último en pie en este fenómeno global.",
+    "completado": false
+  },
+  {
+    "titulo": "Apex Legends",
+    "genero": "Shooter",
+    "plataforma": "PC",
+    "añoLanzamiento": 2019,
+    "desarrollador": "Respawn Entertainment",
+    "imagenPortada": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/f002ac48d98f501231e7d8bd3cc418b65c8d511a/capsule_616x353.jpg?t=1754578148",
+    "descripcion": "Un battle royale basado en héroes donde la cooperación y la habilidad son clave.",
+    "completado": false
+  },
+  {
+    "titulo": "League of Legends",
+    "genero": "MOBA",
+    "plataforma": "PC",
+    "añoLanzamiento": 2009,
+    "desarrollador": "Riot Games",
+    "imagenPortada": "https://cdn1.epicgames.com/offer/24b9b5e323bc40eea252a10cdd3b2f10/EGS_LeagueofLegends_RiotGames_S1_2560x1440-47eb328eac5ddd63ebd096ded7d0d5ab",
+    "descripcion": "Compite en intensas batallas 5v5 con más de 150 campeones disponibles.",
+    "completado": false
+  },
+  {
+    "titulo": "Valorant",
+    "genero": "Shooter táctico",
+    "plataforma": "PC",
+    "añoLanzamiento": 2020,
+    "desarrollador": "Riot Games",
+    "imagenPortada": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv8zdT9tgQOQwqY0MN2ZtpFeqw55LwkKFNvA&s",
+    "descripcion": "Combina habilidades únicas y precisión táctica en intensos enfrentamientos 5v5.",
+    "completado": false
+  },
+  {
+    "titulo": "The Last of Us Part I",
+    "genero": "Drama / Aventura",
+    "plataforma": "PlayStation 5",
+    "añoLanzamiento": 2022,
+    "desarrollador": "Naughty Dog",
+    "imagenPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0720/eEczyEMDd2BLa3dtkGJVE9Id.png",
+    "descripcion": "Joel y Ellie emprenden un viaje emocional a través de un Estados Unidos postapocalíptico.",
+    "completado": true
+  },
+  {
+    "titulo": "Diablo IV",
+    "genero": "RPG / Acción",
+    "plataforma": "PC",
+    "añoLanzamiento": 2023,
+    "desarrollador": "Blizzard Entertainment",
+    "imagenPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202211/3017/Oo1B84A7BLCT157YFSxjtwG0.png",
+    "descripcion": "Lucha contra hordas demoníacas y explora un oscuro mundo abierto lleno de secretos.",
+    "completado": false
+  },
+  {
+    "titulo": "Star Wars Jedi: Survivor",
+    "genero": "Acción / Aventura",
+    "plataforma": "PlayStation 5",
+    "añoLanzamiento": 2023,
+    "desarrollador": "Respawn Entertainment",
+    "imagenPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202211/2222/l8QTN7ThQK3lRBHhB3nX1s7h.png",
+    "descripcion": "Cal Kestis continúa su lucha contra el Imperio en una secuela más intensa y cinematográfica.",
+    "completado": true
+  },
+  {
+    "titulo": "Alan Wake 2",
+    "genero": "Terror psicológico",
+    "plataforma": "PC",
+    "añoLanzamiento": 2023,
+    "desarrollador": "Remedy Entertainment",
+    "imagenPortada": "https://image.api.playstation.com/vulcan/ap/rnd/202305/2420/fbd0dcc88b31805fc7d49f59b8e0e5d0276403cde7fb8cc8.jpg",
+    "descripcion": "Un thriller psicológico lleno de misterio, oscuridad y escritura sobrenatural.",
+    "completado": false
+  }
+]
