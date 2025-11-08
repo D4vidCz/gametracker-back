@@ -4,7 +4,7 @@ import { getGames, getGameById, createGame, updateGame, deleteGame, toggleComple
 const router = express.Router();
 
 router.get("/", getGames);
-router.get("/:id", getGameById); // 👈 NUEVA RUTA
+router.get("/:id", getGameById); 
 router.post("/", createGame);
 router.put("/:id", updateGame);
 router.patch("/:id/completado", toggleCompletado);

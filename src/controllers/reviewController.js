@@ -7,7 +7,7 @@ export const getReviews = async (req, res) => {
     const reseñas = await Review.find().populate("juegoId", "titulo genero plataforma");
     res.json(reseñas);
   } catch (error) {
-    console.error("❌ Error al obtener las reseñas:", error);
+    console.error("Error al obtener las reseñas:", error);
     res.status(500).json({ mensaje: "Error al obtener las reseñas" });
   }
 };
@@ -24,7 +24,7 @@ export const getReviewsByGame = async (req, res) => {
     const reviews = await Review.find({ juegoId: gameId });
     res.json(reviews);
   } catch (error) {
-    console.error("❌ Error al obtener reseñas del juego:", error);
+    console.error("Error al obtener reseñas del juego:", error);
     res.status(500).json({ message: "Error al obtener reseñas del juego" });
   }
 };
@@ -59,7 +59,7 @@ export const getReviewStatsByGame = async (req, res) => {
       recomendados
     });
   } catch (error) {
-    console.error("❌ Error al obtener estadísticas del juego:", error);
+    console.error("Error al obtener estadísticas del juego:", error);
     res.status(500).json({ message: "Error al obtener estadísticas del juego" });
   }
 };
@@ -71,7 +71,7 @@ export const createReview = async (req, res) => {
     await nuevaReseña.save();
     res.status(201).json(nuevaReseña);
   } catch (error) {
-    console.error("❌ Error al crear reseña:", error);
+    console.error("Error al crear reseña:", error);
 
     if (error.name === "ValidationError") {
       const mensajes = Object.values(error.errors).map(err => err.message);
@@ -102,7 +102,7 @@ export const updateReview = async (req, res) => {
 
     res.json(reseñaActualizada);
   } catch (error) {
-    console.error("❌ Error al actualizar reseña:", error);
+    console.error("Error al actualizar reseña:", error);
 
     if (error.name === "ValidationError") {
       const mensajes = Object.values(error.errors).map(err => err.message);
@@ -129,7 +129,7 @@ export const deleteReview = async (req, res) => {
 
     res.json({ mensaje: "Reseña eliminada correctamente" });
   } catch (error) {
-    console.error("❌ Error al eliminar reseña:", error);
+    console.error("Error al eliminar reseña:", error);
     res.status(500).json({ mensaje: "Error al eliminar la reseña" });
   }
 };

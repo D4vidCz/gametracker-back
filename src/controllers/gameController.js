@@ -1,5 +1,5 @@
 import { Game } from "../models/game.js";
-import { Review } from "../models/review.js"; // 👈 Importa el modelo de reseñas
+import { Review } from "../models/review.js";
 
 // Obtener todos los juegos
 export const getGames = async (req, res) => {
@@ -48,7 +48,7 @@ export const updateGame = async (req, res) => {
   }
 };
 
-// ✅ Eliminar un juego y sus reseñas asociadas
+// Eliminar un juego y sus reseñas asociadas
 export const deleteGame = async (req, res) => {
   try {
     const { id } = req.params;
@@ -67,7 +67,7 @@ export const deleteGame = async (req, res) => {
 
     res.json({ message: "Juego y reseñas eliminados correctamente" });
   } catch (error) {
-    console.error("❌ Error al eliminar el juego:", error);
+    console.error("Error al eliminar el juego:", error);
     res.status(400).json({ message: "Error al eliminar el juego" });
   }
 
